@@ -1,0 +1,16 @@
+@mixin btn {
+    width: inherit;
+    padding: 10px 60px;
+    background: transparent;
+    border: 2px solid hsl(193, 27%, 31%);
+    color: hsl(193, 27%, 31%);
+    border-radius: 3px;
+    font-weight: bold;
+    text-shadow: $shadow-light;
+    box-shadow: $shadow-light;
+    &:hover{
+        background: hsl(193, 27%, 31%);
+        color: #fff;
+        text-shadow: none;
+    }
+}

@@ -1,0 +1,10 @@
+canvas {
+  width: calc(100% - 80px);
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+/* body {
+  overflow: hidden;
+} */
