@@ -30,15 +30,15 @@
 <body>
     <header id="header" class="header">
         <div class="header-wrap">
-            <div class="header-logo"><img src="./img/logo_B.png" alt=""></div>
-            <div class="header-nav">
+            <div class="header-logo"><a href="./index.html"><img src="./img/logo_basic.svg" alt=""></a></div>
+            <div class="header-nav" id="headerNav">
                 <ul>
-                    <li><a href="javacript:" title="">소개</a></li>
-                    <li><a href="javacript:" title="">아아</a></li>
-                    <li><a href="javacript:" title="">아아</a></li>
-                    <li><a href="javacript:" title="">아아</a></li>
-                    <li><a href="javacript:" title="">아아</a></li>
-                    <li><a href="javacript:" title="">아아</a></li>
+                    <li><a data-go="#section1" href="javascript:" title="">MAIN</a></li>
+                    <li><a data-go="#section2" href="javascript:" title="">SKILL</a></li>
+                    <li><a data-go="#section3" href="javascript:" title="">아아</a></li>
+                    <li><a data-go="#section4" href="javascript:" title="">아아</a></li>
+                    <li><a data-go="#section5" href="javascript:" title="">아아</a></li>
+                    <li><a data-go="#section6" href="javascript:" title="">아아</a></li>
                 </ul>
             </div>
             <div class="header-ico">
@@ -50,18 +50,87 @@
         </div>
     </header>
     <main id="main" class="main">
-        <section class="section1">
+        <section class="section section1" id="section1">
             <canvas id="canvas" width="100" height="100"></canvas>
             <div class="section1-text">
                 <h1>
                     <span class="blast">안</span><span class="blast">녕</span><span class="blast">하</span><span class="blast">세</span><span class="blast">요</span><br><span class="blast">다</span><span class="blast">다</span> <span class="blast">다</span><span class="blast">다</span><span class="blast">다</span> <span class="blast">다</span><span class="blast">다</span><span class="blast">다</span> <span class="blast">다</span><span class="blast">다</span><span class="blast">다</span>
                 </h1>
                 <em>설명 설명 설명 설명 설명</em>
-                <a href="#"><button>CONTACT</button></a>
+                <a href="#" id="contactBtn"><button>CONTACT</button></a>
             </div>
             <div class="section1-scroll">
                 <span>Scroll down <i class="fas fa-arrow-down"></i></i></span>
             </div>
+            <div id="contact" class="contact">
+                <div class="contact-wrap">
+                    <div class="contact-close"><i class="fas fa-times"></i></div>
+                    <div class="contact-tit">Contact Information</div>
+                    <div class="contact-img">
+                        <img src="./img/contact1.svg" alt="contact1">
+                        <img src="./img/contact2.svg" alt="contact2">
+                        <img src="./img/contact3.svg" alt="contact3">
+                    </div>
+                    <form action="https://formspree.io/f/mrgvbnwv" method="post" name="contactForm" class="contact-form" id="contactForm">
+                        <fieldset>
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요" required>
+                            <label for="email">Your email</label>
+                            <input type="text" id="email" name="email" placeholder="이메일을 입력해 주세요" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="제목을 입력해 주세요" required>
+                            <label for="message" class="rightL">Message</label>
+                            <input type="text" id="message" name="message" placeholder="내용을 입력해 주세요" class="rightI" required>
+                            <button type="submit" id="submit">Send Message</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section section2" id="section2">
+            <div class="section2-wrap">
+                <div class="section2-profile">
+                    <img src="./img/profileImg.svg" alt="profile">
+                    <div class="section2-profile-intro">
+                        <h5>Lee Bia</h5>
+                        <p>소개 입니다<br>소개 입니다<br>소개 입니다</p>
+                    </div>
+                </div>
+                <div class="section2-skills">
+                    <div class="section2-skills-top">
+                        <h4>SKILLS</h4>
+                        <div>
+                            <img src="./img/program1.svg" alt="program1">
+                            <img src="./img/program2.svg" alt="program2">
+                            <img src="./img/program3.svg" alt="program3">
+                            <img src="./img/program4.svg" alt="program4">
+                            <img src="./img/program5.svg" alt="program5">
+                            <img src="./img/program6.svg" alt="program6">
+                            <img src="./img/program7.svg" alt="program7">
+                            <img src="./img/program8.svg" alt="program8">
+                            <img src="./img/program9.svg" alt="program9">
+                        </div>
+                    </div>
+                    <div class="section2-skills-bottom">
+                        <h4>And more</h4>
+                        <div>
+                            <img src="./img/program2-1.svg" alt="program2-1">
+                            <img src="./img/program2-2.svg" alt="program2-2">
+                            <img src="./img/program2-3.svg" alt="program2-3">
+                            <img src="./img/program2-4.svg" alt="program2-4">
+                            <img src="./img/program2-5.svg" alt="program2-5">
+                            <img src="./img/program2-6.svg" alt="program2-6">
+                            <img src="./img/program2-7.svg" alt="program2-7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section3" id="section3">
+
+        </section>
+        <section class="section section4" id="section4">
+
         </section>
     </main>
 </body>
