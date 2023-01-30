@@ -11,7 +11,7 @@ $shadow-light : 0 3rem 5rem rgb(255, 255, 255, .5);
 
 //공통속성
 *{margin: 0; padding: 0;}
-body{background: $bg; color: $green-dark; font-family: 'Noto Sans KR', sans-serif;}
+body{color: $green-dark; font-family: 'Noto Sans KR', sans-serif;}
 li{list-style: none;}
 a{text-decoration: none; color: #fff;}
 .section{width: 100%; height: 100vh;}
@@ -25,6 +25,7 @@ a{text-decoration: none; color: #fff;}
     top: 0;
     background: $green-dark;
     box-shadow: $shadow-dark;
+    transition: .3s;
     &-wrap{
         display: flex;
         flex-direction: column;
@@ -92,6 +93,7 @@ a{text-decoration: none; color: #fff;}
 //main
 .main{
     .section1{
+        background: $bg;
         position: relative;
         &-text{
             width: fit-content;
@@ -251,6 +253,7 @@ a{text-decoration: none; color: #fff;}
         }
     }
     .section2{
+        background: $bg;
         display: flex;
         align-items: center;
         &-wrap{
@@ -325,7 +328,19 @@ a{text-decoration: none; color: #fff;}
         }
     }
     .section3{
+        color: #000;
+        @include project(linear-gradient(180deg, rgba(248, 248, 248, 0.48) 0%, rgba(143, 143, 143, 0.57) 100%), #000, #303030);
     }
     .section4{
+        color: #04124B;
+        @include project(linear-gradient(180deg, rgba(201, 233, 242, 0.53) 0%, rgba(52, 125, 209, 0.5088) 68.87%), #000, #04124B);
+    }
+    .section5{
+        color: #FF49A4;
+        @include project(linear-gradient(180deg, rgba(248, 248, 248, 0.71) 0%, rgba(255, 199, 219, 0.71) 100%), #9F004D, #FF49A4);
+    }
+    .section6{
+        color: #26997A;
+        @include project(linear-gradient(180deg, #EBFFFA 0%, #AFE4D6 100%), #0B3E30, #26997A);
     }
 }

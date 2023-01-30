@@ -14,3 +14,93 @@
         text-shadow: none;
     }
 }
+@mixin project ($backgroundColor, $textColor, $borderColor) {
+    overflow: hidden;
+    padding-left: 100rem;
+    box-sizing: border-box;
+    position: relative;
+    &-wrap{
+        width: 100%;
+        height: 100%;
+        padding: 0 50rem;
+        box-sizing: border-box;
+    }
+    h1{
+        padding: 50rem 0 20rem;
+        font-size: 30rem;
+        font-weight: bold;
+        border-bottom: 1px solid #000;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .bg{
+        width: 0;
+        height: 374rem;
+        background: rgba(255, 255, 255, 0.46);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+    .circle{
+        background: $backgroundColor;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: 1s;
+        z-index: -1;
+    }
+    .active{
+        width: 200vw;
+        height: 200vw;
+        top: -50vw;
+        left: -50vh;
+        transition: 2s;
+        opacity: 1;
+    }
+    &-cont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 190rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        justify-content: center;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            gap: 37rem;
+            h3{
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 58px;
+            }
+            p{
+                color: $textColor;
+                font-size: 20px;
+                line-height: 29px;
+                b{
+                    display: inline-block;
+                    width: 90rem;
+                }
+            }
+            button{
+                width: 200rem;
+                height: 50rem;
+                font-weight: 700;
+                font-size: 20px;
+                border: 3px solid $borderColor;
+                color: $borderColor;
+                cursor: pointer;
+                background: transparent;
+            }
+        }
+    }
+}
